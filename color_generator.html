@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Color Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="split-container">
+        <div class="left-side">
+            <div class="content-1">
+                <p class="hex-color-value" id="colorValue">Hex Color</p>
+                <div class="hex-color-container">
+                    <button class="btn">Create Hex Color</button>
+                    <button id="copy-clipboard">Copy To Clip-Board</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="content-2">
+                <div class="rgba-color-container">
+                    <label for="red">Red</label>
+                    <input type="range" min="0" max="255" value="130" id="red" oninput="redValue(this.value)">
+                    <span class="range-value" id="redRangeValue">130</span>
+                    
+                    <label for="green">Green</label>
+                    <input type="range" min="0" max="255" value="130" id="green"oninput="greenValue(this.value)">
+                    <span class="range-value" id="greenRangeValue">130</span>
+
+                    <label for="blue">Blue</label>
+                    <input type="range" min="0" max="255" value="130" id="blue" oninput="blueValue(this.value)"> 
+                    <span class="range-value" id="blueRangeValue">130</span>
+                </div>
+                <button id="rgba-color">Create Rgba Color</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js">
+         
+    </script>
+</body>
+</html>
